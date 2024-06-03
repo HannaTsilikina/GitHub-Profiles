@@ -1,7 +1,17 @@
+import Container from "./components/Container/Container";
 import "./App.css";
+import Header from "./components/Header/Header";
+import Search from "./components/Search/Search";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Container>
+        <Header />
+        <Search hasError onSubmit={() => {}} />
+      </Container>
+    </>
+  );
 }
 
 export default App;
